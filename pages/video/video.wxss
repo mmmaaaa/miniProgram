@@ -1,0 +1,64 @@
+/* pages/video/video.wxss */
+.header{
+  display: flex;
+}
+.header image{
+  width: 60rpx;
+  height: 60rpx;
+  margin: 5rpx 10rpx;
+}
+.header .search{
+  border: 1rpx solid #eee;
+  margin: 0 20rpx;
+  flex: 1;
+  line-height: 60rpx;
+  text-align: center;
+  margin: 5rpx 20rpx;
+  border-radius: 20rpx;
+}
+.navScroll{
+  display: flex;
+  white-space: nowrap;
+  height: 61rpx;
+  padding-left: 15rpx;
+}
+.navScroll .navItem{
+  padding: 0 20rpx;
+  font-size: 28rpx;
+  height: 61rpx;
+  line-height: 60rpx;
+  margin-right: 28rpx;
+}
+.navScroll .navItem .active{
+  border-bottom: 1rpx solid #d43c33;
+}
+.videoScroll .name{
+  display: flex;
+  flex-direction: column;
+  margin-left: 38rpx;
+  margin-top: -20rpx;
+}
+.videoScroll .name .dowm{
+    color: gray;
+}
+.videoScroll .name text{
+  width: 93%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.videoScroll .videoItem image{
+  position: relative;
+  margin: 20rpx 0;
+  width: 90%;
+  margin-left: 38rpx;
+  border-radius: 10rpx;
+}
+.videoScroll .videoItem .tubiao{
+  position: absolute;
+  color:  #cdcdcd;
+   font-size: 100rpx;
+   margin-left: 43%;
+   margin-top: -300rpx;
+   z-index: 1;
+}

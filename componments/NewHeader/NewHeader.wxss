@@ -1,0 +1,17 @@
+/* componments/NewHeader/NewHeader.wxss */
+.header text{
+  font-size: 26rpx;
+  color: #666;
+}
+.header .header-name text{
+  color: black;
+  font-size: 28rpx;
+}
+.header .header-name .more{
+  float: right;
+  border: 1rpx solid #333;
+  border-radius: 30rpx;
+  padding: 10rpx 20rpx;
+  font-size: 26rpx;
+  line-height: 26rpx;
+}

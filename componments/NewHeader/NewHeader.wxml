@@ -1,0 +1,8 @@
+<!--componments/NewHeader/NewHeader.wxml-->
+<view class="header">
+      <text>{{title}}</text>
+      <view class="header-name">
+        <text>{{nav}}</text>
+        <view class="more">查看更多</view>
+      </view>
+    </view>

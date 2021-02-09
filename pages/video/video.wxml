@@ -1,0 +1,27 @@
+<!--pages/video/video.wxml-->
+<view class="header">
+  <image src="/static/images/video/video.jpg"></image>
+  <view class="search" bindtap="toSearch">
+    搜索歌曲
+  </view>
+  <image src="/static/images/logo.png"></image>
+</view>
+<!-- 导航区域 -->
+  <scroll-view scroll-x enable-flex class='navScroll'>
+    <view class='navItem' wx:for="{{videoList}}" wx:key='id'>
+      <view class="navContent {{name == item?'active':''}}" bindtap="changeName" data-text="{{item}}">
+        {{item}}
+      </view>
+    </view>
+  </scroll-view>
+  <!-- 视频列表区域 -->
+  <scroll-view scroll-y class='videoScroll'>
+    <view class="videoItem" wx:for="{{videoArr}}" wx:key='id'>
+      <image src="{{item.cover}}"></image>
+      <view class="iconfont icon-play tubiao" data-id="{{item.id}}" bindtap="toMv"></view>
+      <view class="name">
+        <text>{{item.name}}</text>
+        <text class="dowm">{{item.artistName}}</text>
+      </view>
+    </view>
+  </scroll-view>
